@@ -12,7 +12,7 @@ public class PropertyInjectedControllerTest {
     @BeforeEach
     public void setup() throws Exception {
             this.propertyInjectedController = new PropertyInjectedController();
-            this.propertyInjectedController.greetingService = new GreetingServiceImpl();
+            this.propertyInjectedController.hostileGreetingService = new GreetingServiceImpl();
     }
 
     @Test

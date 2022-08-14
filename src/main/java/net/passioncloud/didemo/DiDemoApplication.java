@@ -1,5 +1,6 @@
 package net.passioncloud.didemo;
 
+//import net.passioncloud.didemo.controllers.ConstructorInjectedController;
 import net.passioncloud.didemo.controllers.ConstructorInjectedController;
 import net.passioncloud.didemo.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
@@ -25,7 +26,6 @@ public class DiDemoApplication {
 
 		// setter injected controller
 		SetterInjectedController sController = ctx.getBean(SetterInjectedController.class);
-		System.out.println(SetterInjectedController.class);
 		print(sController.sayHello());
 
 		// constructor injected controller

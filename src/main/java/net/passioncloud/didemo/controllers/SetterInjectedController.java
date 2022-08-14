@@ -2,6 +2,7 @@ package net.passioncloud.didemo.controllers;
 
 import net.passioncloud.didemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
@@ -16,8 +17,9 @@ public class SetterInjectedController {
         return greetingService.sayGreeting();
     }
 
+//    @Qualifier("familyGreetingService")
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
+    public void setGreetingService(@Qualifier("familyGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 }
