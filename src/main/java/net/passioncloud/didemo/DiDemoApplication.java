@@ -22,6 +22,7 @@ public class DiDemoApplication {
 
 		// property injected controller
 		PropertyInjectedController pController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
+		print("Prop");
 		print(pController.sayHello());
 
 		// setter injected controller

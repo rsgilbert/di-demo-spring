@@ -14,7 +14,7 @@ import net.passioncloud.didemo.services.GreetingService;
 public class PropertyInjectedController {
     // We use auto-wired fo property injection in spring.
 	@Autowired
-    //@Qualifier("hostileGreetingService")
+    @Qualifier("hostileGreetingService")
     public GreetingService hostileGreetingService; // we can also use property name to determine proper bean name
 
     public String sayHello() {
