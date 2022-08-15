@@ -1,15 +1,15 @@
 package net.passioncloud.didemo.services;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Profile("en")
-@Component
-public class GreetingServiceImpl implements GreetingService {
-    String GREETING = "HEY DEAR";
+@Service
+@Primary
+@Profile("de")
+public class PrimaryGermanGreetingService implements GreetingService{
     @Override
     public String sayGreeting() {
-        return GREETING;
+        return "Deutsch greetingst";
     }
 }

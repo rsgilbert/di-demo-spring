@@ -16,18 +16,6 @@ public class DiDemoApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
-        // The bean is created by Spring Framework
-        MyController controller = (MyController) ctx.getBean("myController");
-        controller.hello();
-
-		// property injected controller
-		PropertyInjectedController pController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
-		print("Prop");
-		print(pController.sayHello());
-
-		// setter injected controller
-		SetterInjectedController sController = ctx.getBean(SetterInjectedController.class);
-		print(sController.sayHello());
 
 		// constructor injected controller
 		ConstructorInjectedController cController = ctx.getBean(ConstructorInjectedController.class);
