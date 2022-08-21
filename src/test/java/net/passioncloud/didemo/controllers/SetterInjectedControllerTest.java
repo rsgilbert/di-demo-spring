@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import net.passioncloud.services.GreetingServiceImpl;
+import net.passioncloud.didemo.services.GreetingServiceImpl;
 
 public class SetterInjectedControllerTest {
     private SetterInjectedController controller;

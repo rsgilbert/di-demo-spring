@@ -10,8 +10,6 @@ import org.springframework.context.ApplicationContext;
 import net.passioncloud.didemo.controllers.MyController;
 import net.passioncloud.didemo.controllers.PropertyInjectedController;
 import org.springframework.context.annotation.ComponentScan;
-
-@ComponentScan(basePackages = {"net.passioncloud.services","net.passioncloud.didemo"})
 @SpringBootApplication
 public class DiDemoApplication {
 

@@ -1,4 +1,4 @@
-package net.passioncloud.services;
+package net.passioncloud.didemo.services;
 
 import org.springframework.stereotype.Component;
 
