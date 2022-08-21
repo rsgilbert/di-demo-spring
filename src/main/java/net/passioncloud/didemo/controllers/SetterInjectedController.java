@@ -1,10 +1,9 @@
 package net.passioncloud.didemo.controllers;
 
-import net.passioncloud.didemo.services.GreetingService;
+import net.passioncloud.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
 
 /**
  * In setter-based dependency injection, we inject by calling setter methods of the class.

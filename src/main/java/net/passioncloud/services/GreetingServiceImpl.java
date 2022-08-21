@@ -1,8 +1,7 @@
-package net.passioncloud.didemo.services;
+package net.passioncloud.services;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Profile("en")
 @Component

@@ -1,11 +1,5 @@
 package net.passioncloud.didemo.controllers;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import net.passioncloud.didemo.services.GreetingServiceImpl;
-
 //public class ConstructorInjectedControllerTest {
 //	ConstructorInjectedController controller;
 //    @BeforeEach

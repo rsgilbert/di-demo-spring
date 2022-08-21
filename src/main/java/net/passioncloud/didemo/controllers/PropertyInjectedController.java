@@ -1,11 +1,10 @@
 package net.passioncloud.didemo.controllers;
 
-import net.passioncloud.didemo.services.HostileGreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import net.passioncloud.didemo.services.GreetingService; 
+import net.passioncloud.services.GreetingService;
 
 /**
  * In property-based dependency injection, we inject by assigning values to the public properties/fields of the class.
