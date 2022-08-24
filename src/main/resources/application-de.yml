@@ -1,0 +1,9 @@
+jms:
+    username: German User
+    dburl: http://jms.e/yet-another-markup-language
+    password: DeutschPass
+
+passioncloud:
+    username: YAML Cloud User in Germany
+    dburl: http://passioncloud.de/
+    password: "De-TICK$tok"
