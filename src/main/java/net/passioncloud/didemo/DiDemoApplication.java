@@ -25,14 +25,12 @@ public class DiDemoApplication {
 		ConstructorInjectedController cController = ctx.getBean(ConstructorInjectedController.class);
 		print(cController.sayHello());
 
-		ConstructorInjectedController controller2 = ctx.getBean(ConstructorInjectedController.class);
-		print(controller2.sayHello());
+		// fake data source
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+		print(fakeDataSource.getUser());
+		print(fakeDataSource.getPassword());
+		print(fakeDataSource.getUrl());
 
-		SetterInjectedController sController = ctx.getBean(SetterInjectedController.class);
-		print(sController.sayHello());
-
-		SetterInjectedController sController2 = ctx.getBean(SetterInjectedController.class);
-		print(sController2.sayHello());
 	}
 	
 	static void print(String msg) {
