@@ -11,7 +11,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySource("classpath:datasource.properties")
+//@PropertySource("classpath:datasource.properties")
 @PropertySource("classpath:jms.properties")
 public class PropertyConfig {
     @Autowired
@@ -19,11 +19,11 @@ public class PropertyConfig {
 
     // below annotation gets value out of the application context as an externalized property
     // Uses spring expression language to find the value (uses ${})
-//    @Value("${passioncloud.username}")
-//    private String user;
+    @Value("${passioncloud.username}")
+    private String user;
 
-//    @Value("${passioncloud.password}")
-//    private String password;
+    @Value("${passioncloud.password}")
+    private String password;
 
     @Value("${passioncloud.dburl}")
     private String url;
@@ -40,9 +40,9 @@ public class PropertyConfig {
     @Bean
     public FakeDataSource fakeDataSource() {
         FakeDataSource fakeDataSource = new FakeDataSource();
-        fakeDataSource.setPassword(env.getProperty("PASSWORD"));
-//        fakeDataSource.setUrl(url);
-        fakeDataSource.setUser(env.getProperty("USER"));
+        fakeDataSource.setPassword(password);
+        fakeDataSource.setUrl(url);
+        fakeDataSource.setUser(user);
         return fakeDataSource;
     }
 

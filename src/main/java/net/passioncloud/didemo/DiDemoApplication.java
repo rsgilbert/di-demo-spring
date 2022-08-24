@@ -32,6 +32,7 @@ public class DiDemoApplication {
 		print(fakeDataSource.getUrl());
 
 		// fake jms
+		System.out.println("JMS");
 		FakeJmsBroker jmsBroker = (FakeJmsBroker) ctx.getBean("fakeJmsBroker");
 		print(jmsBroker.getPassword());
 		print(jmsBroker.getUrl());

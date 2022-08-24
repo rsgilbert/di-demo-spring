@@ -1,0 +1,9 @@
+jms:
+    username: The Badass YML User
+    dburl: http://jms.org/yet-another-markup-language
+    password: JMSPa55
+
+passioncloud:
+    username: YAML Cloud User
+    dburl: http://passioncloud.net/
+    password: "TICK$tok"

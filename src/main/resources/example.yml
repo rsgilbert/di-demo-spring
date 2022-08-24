@@ -1,0 +1,34 @@
+# This is a comment
+# Yaml is used to describe datastructures
+
+name: James
+
+names:
+  - Piggot # 2 or 4 spaces
+  - Mirrage
+
+pound_sign: "#"
+
+book:
+    author: Joe Biden
+    publisher: K Trading
+
+
+truth: yes
+
+another_truth: True
+third_falsy: false
+
+string_v: This is a quote
+string_v2: "This is'nt it"
+
+many_lines: |
+  today is 
+  my birthday so
+  please get me 
+  something 
+
+one_long_str: >
+  hey 
+  there
+  pal Nicy.
